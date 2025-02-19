@@ -6,3 +6,7 @@ python-dotenv==1.0.1
 pypdf==5.3.0
 openai==1.63.2
 tiktoken==0.9.0
+docling==2.23.0
+docling-core==2.20.0
+docling-parse==3.4.0
+docling-ibm-models==3.3.2
