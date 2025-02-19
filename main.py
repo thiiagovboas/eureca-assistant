@@ -42,14 +42,14 @@ def get_file_hash(file_path: str) -> str:
 def load_pdf_contents():
     logger.info("Iniciando carregamento dos PDFs")
     
-   # Obtem o diretório atual do script
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
-pdf_paths = {
-    "manual": os.path.join(current_dir, "Manual_lei_de_aprendizagem.pdf"),
-    "boas_praticas": os.path.join(current_dir, "Boas_Práticas_na_Seleção_de_Jovens_Aprendizes.pdf"),
-    "sobre": os.path.join(current_dir, "Sobre_Eureca.pdf")
-}
+    # Obtem o diretório atual do script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    pdf_paths = {
+        "manual": os.path.join(current_dir, "Manual_lei_de_aprendizagem.pdf"),
+        "boas_praticas": os.path.join(current_dir, "Boas_Práticas_na_Seleção_de_Jovens_Aprendizes.pdf"),
+        "sobre": os.path.join(current_dir, "Sobre_Eureca.pdf")
+    }
     
     # Verifica se os arquivos existem
     for name, path in pdf_paths.items():
