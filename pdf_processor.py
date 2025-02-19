@@ -14,10 +14,11 @@ class PDFProcessor:
         """
         Inicializa o processador de PDFs com configurações padrão.
         """
+        current_dir = os.path.dirname(os.path.abspath(__file__))
         self.pdf_files = {
-            'manual': "Manual_lei_de_aprendizagem.pdf",
-            'boas_praticas': "Boas_Práticas_na_Seleção_de_Jovens_Aprendizes.pdf",
-            'sobre_eureca': "Sobre_Eureca.pdf"
+            'manual': os.path.join(current_dir, "Manual_lei_de_aprendizagem.pdf"),
+            'boas_praticas': os.path.join(current_dir, "Boas_Práticas_na_Seleção_de_Jovens_Aprendizes.pdf"),
+            'sobre_eureca': os.path.join(current_dir, "Sobre_Eureca.pdf")
         }
         self.vectorstore: Optional[FAISS] = None
         self.last_processed: Optional[datetime] = None
