@@ -5,4 +5,8 @@ langchain-core==0.1.37
 python-dotenv==1.0.1
 pypdf==4.0.1
 openai==1.12.0
+<<<<<<< HEAD
 tiktoken==0.5.2
+=======
+tiktoken==0.5.2
+>>>>>>> 6fa6978fe1163c4f79708e1b86c5dc517cb30e53
